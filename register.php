@@ -10,9 +10,9 @@
 </head>
 <body>
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Animal Adoption</a>
-    </nav>
+<?php
+    include('header.html'); // Include the header section
+?> 
     <!-- Main Content -->
     <div class="container mt-5">
         <div class="row justify-content-center">
@@ -37,6 +37,10 @@
                         <input type="password" class="form-control" id="password" name="password" required>
                     </div>
                     <div class="form-group">
+                        <label for="ConfirmPassword">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmpass" name="confirmpassword" required>
+                    </div>
+                    <div class="form-group">
                         <label for="userType">User Type:</label>
                         <select class="form-control" id="userType" name="userType" required>
                             <option value="user">User</option>
@@ -57,20 +61,18 @@
                     </div>
                     <div class="form-group">
                         <label for="numberOfPetsAtHome">Number of Pets at Home:</label>
-                        <input type="number" class="form-control" id="numberOfPetsAtHome" name="numberOfPetsAtHome">
+                        <input type="number" class="form-control" id="numberOfPetsAtHome" name="numberOfPetsAtHome" min="0">
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">Register</button>
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
                     <button type="reset" class="btn btn-secondary btn-block">Reset</button>
                 </form>
             </div>
         </div>
     </div>
     <!-- Footer -->
-    <footer class="bg-light text-center mt-5">
-        <div class="container">
-            <p>Student Names | Class Number | Year</p>
-        </div>
-    </footer>
+<?php
+    include('footer.html'); // Include the footer section
+?> 
     <!-- Bootstrap JS (Optional) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
