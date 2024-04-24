@@ -1,0 +1,38 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #fffacd; /* Pale yellow color */
+    color: #333;
+    min-height: 100vh; /* Set minimum height of the body to the viewport height */
+    display: flex;
+    flex-direction: column; /* Arrange children in column direction */
+}
+
+h1 {
+    color: #007bff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Added styles for footer */
+footer {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    flex-wrap: wrap; /* Allow items to wrap if needed */
+    background-color: #343a40; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 20px; /* Add padding */
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+footer p {
+    margin: 0; /* Remove default margins */
+}
+
+footer p span {
+    font-weight: bold; /* Make the text bold */
+    margin-right: 5px; /* Add a small space between items */
+}
